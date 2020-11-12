@@ -58,9 +58,9 @@ class TM1638(object):
         """
         docstring
         """
-        self.STB.value(0)
+        self.STB.off()
         self._byte(cmd)
-        self.STB.value(1)
+        self.STB.on()
 
     def _write_data_command(self):
         """
